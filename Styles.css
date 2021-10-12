@@ -1,0 +1,102 @@
+#topbar {
+    background-color: rgb(43, 226, 125);
+    height: 81px;
+    width: 100%;
+    position: absolute;    
+}
+
+#title-topbar {
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+#logo {
+    position: relative;
+    bottom: 65px;
+}
+
+#navbar {
+    text-align: center;
+    position: relative;
+    top: 50px;
+   height: 40px;
+   width: 100%;
+
+}
+
+#navbar li {
+    
+    top: 25px;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    padding: 0px 75px;
+    font-size: larger;
+}
+
+
+.headlinearticle {
+    border-style:groove;
+    border-color: honeydew;
+    border-width: 5px;
+    float: left;
+    height: 500;
+    font-size: 1.0em;
+    background-color: rgb(43, 128, 226);
+    margin-top: 50px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.headlinecontent {
+    padding-left: 10px;
+    float: right;
+    color: gold;
+    height: 100px;
+    width: 500px;
+}
+
+.article-container {
+    justify-content: center;
+}
+
+#adrow {
+    height: 50px;
+    background-color: khaki;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h1 {
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1ex;
+}
+
+p {
+    text-align: left;
+    
+    
+}
+
+.fixedwidth {
+    width: 1000px;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(37, 37, 37);
+}
+

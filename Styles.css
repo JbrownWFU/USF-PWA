@@ -1,19 +1,26 @@
 #topbar {
-    background-color: rgb(43, 226, 125);
+    background-color: rgb(14, 31, 88);
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
     height: 81px;
     width: 100%;
     position: absolute;    
 }
 
 #title-topbar {
-    vertical-align: middle;
+    position: relative;
+    bottom: 15px;
     text-align: center;
+    font-size:x-large;
+    font-family: 'Times New Roman', Times, serif;
     
 }
 
 #logo {
     position: relative;
-    bottom: 65px;
+    left: 10px;
+    bottom: 100px;
 }
 
 #navbar {
@@ -27,23 +34,25 @@
 
 #navbar li {
     
-    top: 25px;
+    position: relative;
     list-style: none;
     text-align: center;
     display: inline-block;
-    padding: 0px 75px;
+    padding: 15px 45px;
     font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
 }
 
 
 .headlinearticle {
     border-style:groove;
-    border-color: honeydew;
-    border-width: 5px;
+    border-color: rgb(173, 173, 173);
+    border-width: 3px;
     float: left;
     height: 500;
     font-size: 1.0em;
-    background-color: rgb(43, 128, 226);
+    background-color: rgb(255, 255, 255);
     margin-top: 50px;
     margin-left: 10px;
     padding-left: 10px;
@@ -55,9 +64,13 @@
 .headlinecontent {
     padding-left: 10px;
     float: right;
-    color: gold;
+    color: rgb(0, 0, 0);
     height: 100px;
     width: 500px;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .article-container {
@@ -72,10 +85,8 @@
     margin-right: auto;
 }
 
-
-
 h1 {
-    text-align: left;
+    text-align: Center;
     color: rgb(0, 0, 0);
 }
 
@@ -83,6 +94,8 @@ h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.1ex;
+    color: rgb(255, 255, 255);
+
 }
 
 p {
@@ -97,6 +110,13 @@ p {
 
 body {
     margin: 0;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(255, 255, 255);
 }
 
+a {
+    color:inherit; text-decoration: none;
+}
+
+img {
+    border: 1px solid #000;
+}

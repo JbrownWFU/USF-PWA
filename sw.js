@@ -1,8 +1,13 @@
+
+
+var offlineResponse = "<html>" + "<body>" + "<style>" + "body{text-align: center; background-color: #555; color#fff;}" + "</style>" + "<h1>Welcome To The New News</h1>" + "<p>It looks like you are offline, please check your network and retry</p>" + "</body>" + "</html>"
+
+
 self.addEventListener('fetch', function(event){
     event.respondWith(
         fetch(event.request).catch(function() {
             return new Response (
-                "Welcome to the news\n" + "Looks like you are offline\n"
+                offlineResponse, {headers:{"Content-Type":"text/html"}}
             );
         })
     
@@ -10,14 +15,12 @@ self.addEventListener('fetch', function(event){
     });
 
 
-
-
 self.addEventListener ('install' , function(event) {
     event.waitUntil(
         caches.open('newsCache').then(function(cache) {
             return cache.addAll(
 
-            ['/offline.html', '/index.html', '/CSS/Styles.css']
+            ['/index.html', '/CSS/Styles.css', '/IMG/']
 
             );
         })

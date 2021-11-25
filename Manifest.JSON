@@ -1,0 +1,34 @@
+{
+
+    "short_name":"New News",
+    "name":"The New News",
+    "description":"Bringing you the realest news 24/7",
+    "orientation":"auto",
+    "start_url":"/index.html", 
+    "Scope":"/",
+    "display":"fullscreen",
+    "dir":"ltr",
+    "lang":"en-US",
+    "related_applications":"NULL",
+    "prefer_related_applications":"false",
+    "icons":
+    [
+        {
+        "src":"/IMG/globe.png",
+        "type":"image/png",
+        "sizes":"192x192"
+
+        },
+
+        {
+
+            "src":"/IMG/globe.png",
+            "type":"image/png",
+            "sizes":"512x512"
+
+        }
+    ],
+    "theme_color":"#242424",
+    "background_color":"#242424"
+
+}

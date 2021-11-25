@@ -5,9 +5,10 @@
     <title>THE NEW NEWS</title>
     <meta name="description" content="Page">
     <meta name="keywords" content="test">
+    <link rel="manifest" href="/Manifest.JSON">
 
 </head>
-
+<!--- begin index.html - starting with the blue title top bar containing the title of our application --> 
 <body>
      <div id=container>
 
@@ -23,7 +24,7 @@
             </div>
     </div>
 
-    <div id="navbar">
+    <div id="navbar"> <!-- Nav bar containing link which can be utilized at a later point to expand the app-->
         <ul class="navlinks">
             <li><a href="#">Local </a></li>
             <li><a href="#">Sports </a></li>
@@ -36,7 +37,7 @@
         </ul>
     </div>
 
-    <div id="article-container">
+    <div id="article-container"> <!-- First of four article containers containing sample news stories-->
 
         <div class=headlinearticle>
             <h1>Camel Migration Expected Soon </h1>
@@ -52,7 +53,7 @@
                 </div>
             </div>
             
-            
+           
     </div>
         <div class=headlinearticle>
             <h1>Dolphins QB Tua Tagovailoa Wins NFL MVP </h1>
@@ -104,17 +105,25 @@
 
     </div>
 
-    
 </div>
 
+<script> //Service worker initialization, if service worker is registered send console log message for debugging. 
 
-
-
-
-<script>
     if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').then(function() { console.log("Service Worker Registered"); }); 
     }
+
+    Notification.requestPermission().then(function(permission) { //Request notification permission, permission is grantable however curerntly notifications are unused
+    if (permission === "granted") {
+        navigator.serviceWorker.ready.then(function(registration) {
+            //new Notification("Testing");
+        });
+    }
+
+    
+
+});
+    
 </script>
 </body>
 </html>
